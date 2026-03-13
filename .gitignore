@@ -1,0 +1,8 @@
+**/.zed
+**/.cache
+**/bin
+**/*.os
+**/compile_commands.json
+**/.sconsign.dblite
+**/godot-cpp
+**/*.svg*
