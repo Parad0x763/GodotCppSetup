@@ -5,17 +5,23 @@
 namespace godot {
     class GDExample : public Sprite2D {
         GDCLASS( GDExample, Sprite2D )
-    
+
         private:
             double time_passed;
-        
+            double time_emit; // used to demonstrate `Signals`
+            double amplitued;
+            double speed;
+
         protected:
             static void _bind_methods();
-        
+
         public:
             GDExample();
             ~GDExample();
-            
+            void set_amplitued( const double p_amplitude );
+            double get_amplitued() const;
             void _process( double delta ) override;
+            void set_speed( const double p_speed );
+            double get_speed() const;
     };
 } // namespace godot
